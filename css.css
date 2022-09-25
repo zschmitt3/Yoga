@@ -1,0 +1,212 @@
+body{
+	background-color:#40407A;
+	color:#40407a;
+	font-family:Verdana, Arial, sans-serif;
+	margin:0;
+}
+dd{
+	font-size:90%;
+}
+footer{
+	clear:right;
+	font-size:small;
+	font-style:italic;
+	text-align:center;
+}
+form{
+	display:flex;
+	flex-flow:column nowrap;
+}
+h2{
+	margin:0;
+}
+header{
+	color:#FFFFFF;
+	background-color:#80cbc4;
+	background-image:url(Images/lilyheader.jpg);
+	background-size:100% 100%;
+	font-size:90%;
+	min-height:200px;
+	text-decoration:none;
+	transition:color 10s ease-out;
+}
+header :hover{
+	color:#8F92B2;
+}
+header :link{
+	color:#FFFFFF;
+}
+header :visited{
+	color:#FFFFFF;
+}
+input, datalist textarea{
+	margin-bottom:0.5em;
+}
+li{
+	font-size:90%;
+}
+nav{
+	background-color:#FFFFFF;
+	height:auto;
+	left:0;
+	margin:0;
+	padding:0;
+	position:fixed;
+	top:0;
+	text-align:right;
+	width:100%;
+	z-index:9999;
+}
+nav a{
+	text-decoration:none;
+}
+nav ul{
+	font-size:1.2em;
+	list-style:none;
+	margin:0;
+	padding-right:2em;
+}
+nav ul li{
+	display:inline;
+	padding-left:2em;
+	width:30%;
+}
+nav :hover{
+	color:#A26100;
+}
+nav :link{
+	color:#3F2860;
+}
+nav :visited{
+	color:#497777
+}
+section{
+	padding-left:.5em;
+	padding-right:.5em;
+}
+table{
+	border:1px #40407A solid;
+	border-collapse:collapse;
+	margin-bottom:1em;
+	width:400px;
+}
+td, th{
+	border:1px #40407A solid;
+	padding:.5em;
+}
+tr :nth-of-type(even){
+	background-color:D7E8E9;
+}
+/*Unfamiliar with table captions{
+	margin:1em;
+	font-size:120%;
+	font-weight:bold;
+}*/
+
+
+
+.content{
+	height:20vh;
+	padding-left:10%;
+	padding-top:2em;
+}
+.home{
+	height:20vh;
+	padding-left:10%;
+	padding-top:2em;
+}
+
+
+#flow{
+	display:block;
+}
+#loungehero{
+	background-image:url(images/yogalounge.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	display:none;
+	height:300px;
+}
+#mathero{
+	background-image:url(images/yogamat.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	display:none;
+	height:300px;
+}
+#wrapper{
+	background-color:#F5F5F5;
+	padding:2em;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+@media (min-width:600px){
+	
+	form{
+		display:grid;
+		grid-template-rows:auto;
+		grid-template-columns:auto;
+	}
+	input, datalist textarea{
+		grid-column:2/3;
+		grid-row:auto;
+	}/*This grid setup doesn't feel right, but I wasn't sure what the book wanted me to do, so I improvised.*/
+	label{
+		grid-row:auto;
+		grid-column:1/2;
+	}
+	nav ul{
+		display:flex;
+		justify-content:flex-end;
+	}
+	nav li{
+		width:7em;
+	}
+	section{
+		padding-left:2em;
+		padding-right:2em;
+	}
+	
+	
+	
+	#flow{
+		display:flex;
+		flex-direction:row;
+	}
+	#loungehero{
+		display:block;
+		padding-bottom:1em;
+	}
+	#mathero{
+		display:block;
+		padding-bottom:1em;
+	}
+}
+
+@media (min-width:1024px){
+	header{
+		font-size:120%;
+	}
+	nav{
+		font-weight:bold;
+	}
+}
+	
+	
+	
+	.home{
+		height:30vh;
+		padding-left:8em;
+		padding-top:5em;
+	}
+	
+	
+	
+	#wrapper{
+		margin:auto;
+		width:80%
+	}
+}
